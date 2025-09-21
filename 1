@@ -1,0 +1,7 @@
+import random
+def blind_box():
+    items = ["SSR皮肤", "SR皮肤", "R皮肤", "普通奖励"]
+    weights = [5, 15, 30, 50]  # 概率
+    prize = random.choices(items, weights)[0]
+    print("你抽到了:", prize)
+blind_box()
